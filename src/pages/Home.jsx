@@ -28,10 +28,10 @@ function Home() {
                                 One stop destination for all software
                                 development Projects.
                             </p>
-                            <button className="btn rounded btn-success">
+                            <Link to="/login" className="btn rounded btn-success">
                                 Get Started{" "}
                                 <i class="fa-solid fa-arrow-right ms-3"></i>
-                            </button>
+                            </Link>
                         </Col>
                         <Col sm={12} md={6} style={{ marginTop: "100px" }}>
                             <img className="w-75" src={image} alt="no-image" />

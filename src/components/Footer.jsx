@@ -5,7 +5,7 @@ function Footer() {
     return (
         <>
             <div
-                className="d-flex justify-content-between text-light p-5"
+                className="d-flex justify-content-evenly text-light p-5"
                 style={{
                     background: "#6abe08",
                 }}
@@ -68,7 +68,7 @@ function Footer() {
                 <div className="d-flex flex-column">
                     <h3 className="text-light">LINKS</h3>
                     <Link
-                        to="/projects"
+                        to="/project"
                         style={{
                             textDecoration: "none",
                             color: "black",

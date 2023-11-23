@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import { Col, Row } from "react-bootstrap";
+import ProjectCard from "../components/ProjectCard";
 
 function Project() {
     return (
@@ -21,8 +22,10 @@ function Project() {
                     ></i>{" "}
                 </div>
 
-                <Row>
-                    <Col sm={3} md={6} lg={4}></Col>
+                <Row className="mb-4 mt-4 container-fluid">
+                    <Col sm={3} md={6} lg={4}>
+                        <ProjectCard />
+                    </Col>
                 </Row>
             </div>
         </>
