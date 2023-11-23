@@ -9,7 +9,7 @@ function Auth({ register }) {
         <>
             <div className="justify-content-center d-flex align-items-center m-5">
                 <div className="container w-75">
-                    <Link to="/">
+                    <Link to="/" style={{ color: "#007fff" }}>
                         <i class="fa-solid fa-arrow-right fa-rotate-180 fa-xl"></i>{" "}
                         Back to home
                     </Link>
@@ -17,7 +17,7 @@ function Auth({ register }) {
                         className="w-100  d-flex justify-content-center rounded p-5"
                         style={{ background: "#6abe08" }}
                     >
-                        <div className="col-lg-6 ">
+                        <div className="col-lg-6 ms-5">
                             <img src={login} alt="login" width={"90%"} />
                         </div>
                         <div className="col-lg-6 p-3">
@@ -52,18 +52,49 @@ function Auth({ register }) {
                                         placeholder="Password"
                                     />
                                 </Form.Group>
-                                {
-                                    registerForm?
+                                {registerForm ? (
                                     <div>
-                                    <button className="btn btn-warning rounded mt-3">Register</button>
-<p className="mt-3 text-light">Already a User ? Click here to <Link to="/login">Login</Link></p>
+                                        <button
+                                            className="btn rounded mt-3"
+                                            style={{
+                                                backgroundColor: "#ffd700",
+                                                color: "black",
+                                            }}
+                                        >
+                                            Register
+                                        </button>
+                                        <p className="mt-3 text-light">
+                                            Already a User ? Click here to{" "}
+                                            <Link
+                                                to="/login"
+                                                style={{ color: "#191970" }}
+                                            >
+                                                Login
+                                            </Link>
+                                        </p>
                                     </div>
-                                    :
+                                ) : (
                                     <div>
-                                    <button className="btn btn-warning rounded mt-3">Login</button>
-<p className="mt-3 text-light">New User ? Click here to <Link to="/login">Register</Link></p>
+                                        <button
+                                            className="btn  rounded mt-3"
+                                            style={{
+                                                backgroundColor: "#ffd700",
+                                                color: "black",
+                                            }}
+                                        >
+                                            Login
+                                        </button>
+                                        <p className="mt-3 text-light">
+                                            New User ? Click here to{" "}
+                                            <Link
+                                                to="/register"
+                                                style={{ color: "#191970" }}
+                                            >
+                                                Register
+                                            </Link>
+                                        </p>
                                     </div>
-                                }
+                                )}
                             </Form>
                         </div>
                     </div>

@@ -32,7 +32,8 @@ function Footer() {
                 <div className="d-flex flex-column ">
                     <h3 className="text-light">PRODUCTS</h3>
                     <Link
-                        to="register"
+                        to="https://angular.io/docs"
+                        target="_blank"
                         style={{
                             textDecoration: "none",
                             color: "black",
@@ -43,7 +44,8 @@ function Footer() {
                         Angular
                     </Link>
                     <Link
-                        to="register"
+                        to="https://react.dev/learn"
+                        target="_blank"
                         style={{
                             textDecoration: "none",
                             color: "black",
@@ -51,10 +53,11 @@ function Footer() {
                             color: "white",
                         }}
                     >
-                        Angular
+                        React
                     </Link>
                     <Link
-                        to="register"
+                        to="https://react-bootstrap.netlify.app/docs/getting-started/introduction"
+                        target="_blank"
                         style={{
                             textDecoration: "none",
                             color: "black",
@@ -62,9 +65,10 @@ function Footer() {
                             color: "white",
                         }}
                     >
-                        Angular
+                        Bootstrap
                     </Link>
                 </div>
+
                 <div className="d-flex flex-column">
                     <h3 className="text-light">LINKS</h3>
                     <Link
@@ -101,9 +105,10 @@ function Footer() {
                         Register
                     </Link>
                 </div>
+
                 <div className="d-flex flex-column">
                     <h3 className="text-light">CONTACT</h3>
-                    <p>email : projectfair @gmail.com</p>
+                    <p>email : projectfair@gmail.com</p>
                     <p>phone : 91 9497831393</p>
                 </div>
             </div>
