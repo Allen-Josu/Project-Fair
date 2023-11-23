@@ -5,16 +5,21 @@ function Footer() {
     return (
         <>
             <div
-                className="d-flex justify-content-between  p-5"
-                style={{ backgroundColor: "#fffff4", borderRadius: "20px" }}
+                className="d-flex justify-content-between text-light p-5"
+                style={{
+                    background: "#6abe08",
+                }}
             >
-                <div className="d-flex flex-column" style={{ maxWidth: "20%" }}>
-                    <div className="d-flex ms-3 align-items-center ">
-                    <i class="fa-light fa-user-group fa-xl"></i>
-                        <h3 className="ms-3">COMPANY NAME</h3>
+                <div
+                    className="d-flex flex-column text-fair"
+                    style={{ maxWidth: "20%" }}
+                >
+                    <div className="d-flex ms-3  ">
+                        <i class="fa-brands fa-stack-overflow fa-2x"></i>{" "}
+                        <h3 className="ms-3 text-light">Project Fair</h3>
                     </div>
                     <div className="mt-2">
-                        <p>
+                        <p style={{ textAlign: "justify" }}>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Expedita quia, possimus ad facere amet, quas
                             mollitia eos numquam, iure error natus dolores?
@@ -24,14 +29,15 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className="d-flex flex-column">
-                    <h3>PRODUCTS</h3>
+                <div className="d-flex flex-column ">
+                    <h3 className="text-light">PRODUCTS</h3>
                     <Link
                         to="register"
                         style={{
                             textDecoration: "none",
                             color: "black",
                             fontSize: "18px",
+                            color: "white",
                         }}
                     >
                         Angular
@@ -42,6 +48,7 @@ function Footer() {
                             textDecoration: "none",
                             color: "black",
                             fontSize: "18px",
+                            color: "white",
                         }}
                     >
                         Angular
@@ -52,19 +59,21 @@ function Footer() {
                             textDecoration: "none",
                             color: "black",
                             fontSize: "18px",
+                            color: "white",
                         }}
                     >
                         Angular
                     </Link>
                 </div>
                 <div className="d-flex flex-column">
-                    <h3>LINKS</h3>
+                    <h3 className="text-light">LINKS</h3>
                     <Link
                         to="/projects"
                         style={{
                             textDecoration: "none",
                             color: "black",
                             fontSize: "18px",
+                            color: "white",
                         }}
                     >
                         Projects
@@ -75,6 +84,7 @@ function Footer() {
                             textDecoration: "none",
                             color: "black",
                             fontSize: "18px",
+                            color: "white",
                         }}
                     >
                         Login
@@ -85,13 +95,14 @@ function Footer() {
                             textDecoration: "none",
                             color: "black",
                             fontSize: "18px",
+                            color: "white",
                         }}
                     >
                         Register
                     </Link>
                 </div>
                 <div className="d-flex flex-column">
-                    <h3>CONTACT</h3>
+                    <h3 className="text-light">CONTACT</h3>
                     <p>email : projectfair @gmail.com</p>
                     <p>phone : 91 9497831393</p>
                 </div>

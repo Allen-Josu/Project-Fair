@@ -64,8 +64,8 @@ function Home() {
 
                     </marquee>
 
-                    <div className="mt-5">
-                        <Link to="/project" className="text-danger">See More Projects</Link>
+                    <div className="mt-5 mb-4">
+                        <Link to="/project" className="text-danger ">See More Projects</Link>
                     </div>
                 </div>
             </div>

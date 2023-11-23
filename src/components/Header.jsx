@@ -1,0 +1,22 @@
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+
+function Header() {
+    return (
+        <>
+            <Navbar style={{ background: "#6abe08", height: "100px" }}>
+                <Container>
+                    <Navbar.Brand href="/">
+                        <div className="d-flex align-items-center justify-content-center text-light">
+                            <i class="fa-brands fa-stack-overflow fa-2x pb-4"></i>
+                            <h3 className="ms-3 text-light ">Project Fair</h3>
+                        </div>
+                    </Navbar.Brand>
+                </Container>
+            </Navbar>
+        </>
+    );
+}
+
+export default Header;
