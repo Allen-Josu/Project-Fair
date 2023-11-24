@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 
-function Header() {
+function Header({ dashboard }) {
     return (
         <>
             <Navbar style={{ background: "#6abe08", height: "100px" }}>
@@ -13,6 +13,12 @@ function Header() {
                             <h3 className="ms-3 text-light ">Project Fair</h3>
                         </div>
                     </Navbar.Brand>
+                    {dashboard && (
+                        <button className="btn btn-warning align-items-center d-flex">
+                            Logout{" "}
+                            <i class="fa-solid fa-power-off ms-1 fa-sm"></i>
+                        </button>
+                    )}
                 </Container>
             </Navbar>
         </>

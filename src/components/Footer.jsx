@@ -36,7 +36,6 @@ function Footer() {
                         target="_blank"
                         style={{
                             textDecoration: "none",
-                            color: "black",
                             fontSize: "18px",
                             color: "white",
                         }}
@@ -48,7 +47,6 @@ function Footer() {
                         target="_blank"
                         style={{
                             textDecoration: "none",
-                            color: "black",
                             fontSize: "18px",
                             color: "white",
                         }}
@@ -60,7 +58,6 @@ function Footer() {
                         target="_blank"
                         style={{
                             textDecoration: "none",
-                            color: "black",
                             fontSize: "18px",
                             color: "white",
                         }}
@@ -75,7 +72,6 @@ function Footer() {
                         to="/project"
                         style={{
                             textDecoration: "none",
-                            color: "black",
                             fontSize: "18px",
                             color: "white",
                         }}
@@ -86,7 +82,6 @@ function Footer() {
                         to="login"
                         style={{
                             textDecoration: "none",
-                            color: "black",
                             fontSize: "18px",
                             color: "white",
                         }}
@@ -97,12 +92,21 @@ function Footer() {
                         to="register"
                         style={{
                             textDecoration: "none",
-                            color: "black",
                             fontSize: "18px",
                             color: "white",
                         }}
                     >
                         Register
+                    </Link>
+                    <Link
+                        to="dashboard"
+                        style={{
+                            textDecoration: "none",
+                            fontSize: "18px",
+                            color: "white",
+                        }}
+                    >
+                        Dashboard
                     </Link>
                 </div>
 

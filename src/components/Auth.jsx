@@ -25,77 +25,81 @@ function Auth({ register }) {
                                 <i class="fa-brands fa-stack-overflow fa-2x pb-4 me-3"></i>
                                 Project Fair
                             </h1>
-                            <p className="text-center text-light">
+                            <p
+                                className="text-center text-light"
+                                style={{ fontSize: "18px" }}
+                            >
                                 {registerForm
                                     ? "Sign up to your Account"
                                     : "  Sign up to your Account"}
                             </p>
-
-                            <Form className="mt-4">
-                                {registerForm && (
+                            <div className="d-flex justify-content-center align-items-center">
+                                <Form className="mt-5 w-75">
+                                    {registerForm && (
+                                        <Form.Group className="mb-3">
+                                            <Form.Control
+                                                type="text"
+                                                placeholder="Username"
+                                            />
+                                        </Form.Group>
+                                    )}
                                     <Form.Group className="mb-3">
                                         <Form.Control
-                                            type="text"
-                                            placeholder="Username"
+                                            type="email"
+                                            placeholder="Email id"
                                         />
                                     </Form.Group>
-                                )}
-                                <Form.Group className="mb-3">
-                                    <Form.Control
-                                        type="email"
-                                        placeholder="Email id"
-                                    />
-                                </Form.Group>
-                                <Form.Group className="mb-3">
-                                    <Form.Control
-                                        type="password"
-                                        placeholder="Password"
-                                    />
-                                </Form.Group>
-                                {registerForm ? (
-                                    <div>
-                                        <button
-                                            className="btn rounded mt-3"
-                                            style={{
-                                                backgroundColor: "#ffd700",
-                                                color: "black",
-                                            }}
-                                        >
-                                            Register
-                                        </button>
-                                        <p className="mt-3 text-light">
-                                            Already a User ? Click here to{" "}
-                                            <Link
-                                                to="/login"
-                                                style={{ color: "#191970" }}
-                                            >
-                                                Login
-                                            </Link>
-                                        </p>
-                                    </div>
-                                ) : (
-                                    <div>
-                                        <button
-                                            className="btn  rounded mt-3"
-                                            style={{
-                                                backgroundColor: "#ffd700",
-                                                color: "black",
-                                            }}
-                                        >
-                                            Login
-                                        </button>
-                                        <p className="mt-3 text-light">
-                                            New User ? Click here to{" "}
-                                            <Link
-                                                to="/register"
-                                                style={{ color: "#191970" }}
+                                    <Form.Group className="mb-3">
+                                        <Form.Control
+                                            type="password"
+                                            placeholder="Password"
+                                        />
+                                    </Form.Group>
+                                    {registerForm ? (
+                                        <div>
+                                            <button
+                                                className="btn rounded mt-3"
+                                                style={{
+                                                    backgroundColor: "#ffd700",
+                                                    color: "black",
+                                                }}
                                             >
                                                 Register
-                                            </Link>
-                                        </p>
-                                    </div>
-                                )}
-                            </Form>
+                                            </button>
+                                            <p className="mt-3 text-light">
+                                                Already a User ? Click here to{" "}
+                                                <Link
+                                                    to="/login"
+                                                    style={{ color: "#191970" }}
+                                                >
+                                                    Login
+                                                </Link>
+                                            </p>
+                                        </div>
+                                    ) : (
+                                        <div>
+                                            <button
+                                                className="btn  rounded mt-3"
+                                                style={{
+                                                    backgroundColor: "#ffd700",
+                                                    color: "black",
+                                                }}
+                                            >
+                                                Login
+                                            </button>
+                                            <p className="mt-3 text-light">
+                                                New User ? Click here to{" "}
+                                                <Link
+                                                    to="/register"
+                                                    style={{ color: "#191970" }}
+                                                >
+                                                    Register
+                                                </Link>
+                                            </p>
+                                        </div>
+                                    )}
+                                </Form>
+                            </div>
                         </div>
                     </div>
                 </div>
